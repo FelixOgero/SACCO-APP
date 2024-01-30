@@ -20,4 +20,7 @@ Route::get('/', function () {
 
 Route::post('/login', [AuthController::class,'dashboard'])->name('dashboard');
 
+Route::get('/reset', [AuthController::class, 'reset'])->name('reset');
+
+
 
